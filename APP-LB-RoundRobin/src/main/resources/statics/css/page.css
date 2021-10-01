@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0px;
+}
+
+html { 
+    background: url("../img/background.svg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', 'Arial';
+}
+
+.user_input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2.5vh;
+    font-family: 'Montserrat', 'Arial';
+}
+
+.user_input h3 {
+    margin-right: 1vw;
+}
+
+.user_search{
+    font-family: 'Montserrat', 'Arial';
+    width: 21vw;
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 10px;
+    padding-left: 0.75vw;
+}
+
+.user_search:focus {
+    outline: none;
+}
+
+.user_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2vw;
+    background-color: transparent;
+    width: 2vw;
+    height: 3.1vh;
+}
+
+.user_button label {
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.wildcard_info {
+    width: 30vw;
+}
+
+.wildcard_info h1 {
+    margin-bottom: 2.5vh;
+}
+
+.card {
+    border: 3px white solid;
+    height: auto;
+    border-radius: 20px;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.wildcard {
+    margin: 80px;
+    text-align: justify;
+}
+
+.wildcard img {
+    max-width: 10vw;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    position: fixed;
+    border-bottom: 3px rgba(0, 0, 0, 0.1) solid;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 7px 19px 4px rgba(0,0,0,0.48); 
+    box-shadow: 3px 7px 19px 4px rgba(0,0,0,0.48);
+}
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    margin-left: 15vw;
+}
+
+.user_button i {
+    transition: color 0.5s;
+}
+
+.user_button i:hover {
+    color:rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
